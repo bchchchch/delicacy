@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>the delicacy 𓌉◯𓇋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background" id="mainBackground"></div>
+
+    <div class="frame-container">
+        <!-- ШАПКА -->
+        <div class="frame-header">
+            <div class="logo-area">
+                <div class="brand">the delicacy 𓌉◯𓇋 art & textual oc ask</div>
+            </div>
+            
+            <!-- ПОИСК -->
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Поиск по имени...">
+                <div class="search-results" id="searchResults"></div>
+            </div>
+            
+        </div>
+
+        <!-- БЛОК ФИЛЬТРОВ -->
+        <div class="filters-panel" id="filtersPanel">
+            <div class="filter-group">
+                <div class="filter-main-btn" data-filter-type="gender">ПОЛ ▼</div>
+                <div class="filter-submenu" data-submenu="gender">
+                    <button class="filter-sub-btn" data-filter="gender" data-value="мужской">Мужской</button>
+                    <button class="filter-sub-btn" data-filter="gender" data-value="женский">Женский</button>
+                    <!--<button class="filter-sub-btn" data-filter="gender" data-value="небинарный">Небинарный</button>-->
+                    <button class="filter-sub-btn reset-btn" data-filter="gender" data-value="">Сброс</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <div class="filter-main-btn" data-filter-type="race">РАСА ▼</div>
+                <div class="filter-submenu" data-submenu="race">
+                    <button class="filter-sub-btn" data-filter="race" data-value="человек">Человек</button>
+                    <button class="filter-sub-btn" data-filter="race" data-value="анималоид">Анималоид</button>
+                    <button class="filter-sub-btn reset-btn" data-filter="race" data-value="">Сброс</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <div class="filter-main-btn" data-filter-type="location">МЕСТО ▼</div>
+                <div class="filter-submenu" data-submenu="location">
+                    <button class="filter-sub-btn" data-filter="location" data-value="город">Город</button>
+                    <button class="filter-sub-btn" data-filter="location" data-value="сектор">Секторы</button>
+                    <button class="filter-sub-btn" data-filter="location" data-value="элита">Элитные секторы</button>
+                    <button class="filter-sub-btn" data-filter="location" data-value="безопасность">Безопасная зона</button>
+                    <button class="filter-sub-btn reset-btn" data-filter="location" data-value="">Сброс</button>
+                </div>
+            </div>
+            <div class="filter-group npc-toggle-group">
+                <div class="filter-main-btn" id="npcToggleBtn">ПЕРСОНАЖИ ▼</div>
+                <div class="filter-submenu" data-submenu="npc">
+                    <button class="filter-sub-btn" data-filter="npc" data-value="characters">Персонажи</button>
+                    <button class="filter-sub-btn" data-filter="npc" data-value="npcs">НПС</button>
+                    <button class="filter-sub-btn reset-btn" data-filter="npc" data-value="all">Все</button>
+                </div>
+            </div>
+            <div class="filter-reset-all" id="resetAllFilters">СБРОСИТЬ ВСЕ</div>
+        </div>
+
+        <!-- ОСНОВНАЯ ЗОНА С КНОПКАМИ -->
+        <div class="frame-content" id="frameContent">
+            <div class="left-column">
+                <div class="random-button-container">
+                    <div class="random-button" id="randomButton">
+                        <div class="btn-placeholder">
+                            <span>СЛУЧАЙНЫЙ МЯСОПРОДУКТ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons-container" id="buttonsContainer"></div>
+            </div>
+        </div>
+
+        <div class="cards-container" id="cardsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
